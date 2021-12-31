@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    cursor:pointer
+}
+header {
+    width: 100vw;
+    height: 12vh;
+}
+header nav {
+    display: flex;
+    justify-content:flex-end;
+}
+header nav .nav_right_top {
+    width: 25rem;
+    height: auto;/*Para que tome automaticamente la altura del padre*/
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+}
+nav .nav_right_top a {
+    margin-right: 1rem;
+    color: rgba(0,0,0,0.87);
+}
+nav .nav_right_top .nav_icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    /*Cuando la imagen es muy pequeña o el contenedor es muy grander la imagen se repite*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav .nav_right_top img {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+main{
+    margin-top: 15rem;
+    text-align: center;
+}
+main .main_logo {
+    width:53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main_logo img {
+    width: 30rem;
+}
+
+main .main_input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main_input_container {
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: 0.1rem solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main_input input {
+    width: 45rem;
+    height: 4rem;
+    border:none;
+    outline: none;
+}
+main .main_input_container:hover  /*hover es para crear el efecto al posicionar... en este caso box-sahdow*/{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main_input .search_icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .main_input .micro_icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+main .main_buttom {
+    width: 53rem;
+    margin: 0 auto;
+}
+main .main_buttom div {
+    display: inline-block;
+}
+main .main_buttom button {
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding:0 1.5rem ;/*es el espacio interno que tienen los elementos con su contenedor padre*/
+    margin-right: 1.5rem;
+}
+main .main_buttom button:hover {
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem #000001;
+    color: #222;  
+}
+footer {
+    width: 100vw;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    border-top: 0.1rem solid #e4e4e4;
+}
+footer ul {
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer_left {
+    justify-self: left;/*justificacion de elemento en particular*/
+}
+footer .footer_right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 1rem;
+    color: #5f6368;
+}
